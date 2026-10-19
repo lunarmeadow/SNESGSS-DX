@@ -8,7 +8,7 @@
         <Filename Value="snesgss.lpr"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="5"/>
-        <CursorPos X="28" Y="14"/>
+        <CursorPos X="35" Y="20"/>
         <UsageCount Value="233"/>
         <Loaded Value="True"/>
       </Unit>
@@ -18,10 +18,10 @@
         <ComponentName Value="FormMain"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UnitName Value="UnitMain"/>
         <IsVisibleTab Value="True"/>
         <EditorIndex Value="3"/>
-        <CursorPos X="181" Y="174"/>
+        <TopLine Value="273"/>
+        <CursorPos X="27" Y="286"/>
         <UsageCount Value="232"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -32,7 +32,6 @@
         <ComponentName Value="FormOutputMonitor"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UnitName Value="UnitOutputMonitor"/>
         <EditorIndex Value="2"/>
         <CursorPos X="22"/>
         <UsageCount Value="233"/>
@@ -45,8 +44,7 @@
         <ComponentName Value="FormTranspose"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UnitName Value="UnitTranspose"/>
-        <CursorPos X="64" Y="19"/>
+        <CursorPos X="43" Y="19"/>
         <UsageCount Value="226"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -57,8 +55,8 @@
         <ComponentName Value="FormReplace"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UnitName Value="UnitReplace"/>
         <EditorIndex Value="1"/>
+        <TopLine Value="4"/>
         <CursorPos X="23" Y="27"/>
         <UsageCount Value="226"/>
         <Loaded Value="True"/>
@@ -70,7 +68,6 @@
         <ComponentName Value="SectionName"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UnitName Value="UnitSectionName"/>
         <EditorIndex Value="4"/>
         <CursorPos X="10"/>
         <UsageCount Value="225"/>
@@ -78,17 +75,12 @@
         <LoadedDesigner Value="True"/>
       </Unit>
       <Unit>
-        <Filename Value="UnitLectionList.pas"/>
+        <Filename Value="UnitSectionList.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="FormSectionList"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UnitName Value="UnitSectionList"/>
-        <EditorIndex Value="6"/>
-        <CursorPos X="3" Y="36"/>
-        <UsageCount Value="225"/>
-        <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
+        <UsageCount Value="20"/>
       </Unit>
       <Unit>
         <Filename Value="UnitSubSong.pas"/>
@@ -96,9 +88,9 @@
         <ComponentName Value="FormSubSong"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UnitName Value="UnitSubSong"/>
         <EditorIndex Value="7"/>
-        <CursorPos X="7" Y="8"/>
+        <TopLine Value="14"/>
+        <CursorPos Y="35"/>
         <UsageCount Value="225"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -106,13 +98,63 @@
       <Unit>
         <Filename Value="PaintboxSongRender.pas"/>
         <IsPartOfProject Value="True"/>
-        <UnitName Value="PaintboxSongRender"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="33" Y="11"/>
         <UsageCount Value="162"/>
       </Unit>
+      <Unit>
+        <Filename Value="UnitLectionList.pas"/>
+        <ComponentName Value="FormSectionList"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="UnitSectionList"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="3" Y="36"/>
+        <UsageCount Value="225"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/usr/lib64/lazarus/lcl/interfaces/lcl.pas"/>
+        <UnitName Value="LCL"/>
+        <EditorIndex Value="6"/>
+        <CursorPos X="3" Y="11"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit>
     </Units>
-    <JumpHistory HistoryIndex="-1"/>
+    <JumpHistory HistoryIndex="7">
+      <Position>
+        <Filename Value="UnitMain.pas"/>
+        <Caret Line="15"/>
+      </Position>
+      <Position>
+        <Filename Value="UnitSectionName.pas"/>
+        <Caret Column="10"/>
+      </Position>
+      <Position>
+        <Filename Value="snesgss.lpr"/>
+        <Caret Line="20" Column="35"/>
+      </Position>
+      <Position>
+        <Filename Value="/usr/lib64/lazarus/lcl/interfaces/lcl.pas"/>
+        <Caret Line="11" Column="3"/>
+      </Position>
+      <Position>
+        <Filename Value="UnitSectionName.pas"/>
+        <Caret Column="10"/>
+      </Position>
+      <Position>
+        <Filename Value="UnitSubSong.pas"/>
+        <Caret Line="8" Column="7"/>
+      </Position>
+      <Position>
+        <Filename Value="snesgss.lpr"/>
+        <Caret Line="20" Column="35"/>
+      </Position>
+      <Position>
+        <Filename Value="/usr/lib64/lazarus/lcl/interfaces/lcl.pas"/>
+        <Caret Line="11" Column="3"/>
+      </Position>
+    </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>
       <Modes ActiveMode="default"/>

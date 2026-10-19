@@ -4,7 +4,7 @@ object FormMain: TFormMain
   Top = 199
   Width = 982
   Caption = 'SNES GSS'
-  ClientHeight = 704
+  ClientHeight = 729
   ClientWidth = 982
   Color = clBtnFace
   Font.Color = clWindowText
@@ -84,11 +84,11 @@ object FormMain: TFormMain
     FFFF
   }
   Menu = MainMenu
+  Position = poDesktopCenter
+  LCLVersion = '4.8.0.0'
+  Scaled = False
   OnClose = FormClose
   OnCreate = FormCreate
-  Position = poDesktopCenter
-  LCLVersion = '2.2.0.4'
-  Scaled = False
   object PageControlMode: TPageControl
     Left = 0
     Height = 704
@@ -102,8 +102,8 @@ object FormMain: TFormMain
     OnEnter = PageControlModeEnter
     object TabSheetSong: TTabSheet
       Caption = 'Song [F1]'
-      ClientHeight = 673
-      ClientWidth = 972
+      ClientHeight = 666
+      ClientWidth = 976
       object PaintBoxSong: TPaintBox
         Left = 0
         Height = 673
@@ -120,8 +120,8 @@ object FormMain: TFormMain
     end
     object TabSheetSongList: TTabSheet
       Caption = 'Song list [F2]'
-      ClientHeight = 673
-      ClientWidth = 972
+      ClientHeight = 666
+      ClientWidth = 976
       ImageIndex = 3
       OnEnter = TabSheetSongListEnter
       object SpeedButtonSongUp: TSpeedButton
@@ -131,9 +131,9 @@ object FormMain: TFormMain
         Top = 24
         Width = 50
         Caption = 'Up'
-        OnClick = SpeedButtonSongUpClick
         ShowHint = True
         ParentShowHint = False
+        OnClick = SpeedButtonSongUpClick
       end
       object SpeedButtonSongDown: TSpeedButton
         Left = 412
@@ -142,9 +142,9 @@ object FormMain: TFormMain
         Top = 24
         Width = 50
         Caption = 'Down'
-        OnClick = SpeedButtonSongDownClick
         ShowHint = True
         ParentShowHint = False
+        OnClick = SpeedButtonSongDownClick
       end
       object Label5: TLabel
         Left = 359
@@ -166,8 +166,9 @@ object FormMain: TFormMain
         Top = 3
         Width = 328
         Caption = 'Song list'
-        ClientHeight = 511
+        ClientHeight = 510
         ClientWidth = 326
+        ParentBackground = False
         TabOrder = 0
         object EditSongName: TEdit
           Left = 9
@@ -175,10 +176,10 @@ object FormMain: TFormMain
           Top = 21
           Width = 312
           MaxLength = 30
-          OnChange = EditSongNameChange
-          OnKeyPress = EditSongNameKeyPress
           TabOrder = 0
           Text = 'EditSongName'
+          OnChange = EditSongNameChange
+          OnKeyPress = EditSongNameKeyPress
         end
         object ListBoxSong: TListBox
           Left = 9
@@ -186,12 +187,12 @@ object FormMain: TFormMain
           Top = 51
           Width = 312
           ItemHeight = 16
-          OnClick = ListBoxSongClick
-          OnDblClick = ListBoxSongDblClick
-          OnDrawItem = ListBoxSongDrawItem
           Style = lbOwnerDrawFixed
           TabOrder = 1
           TopIndex = -1
+          OnClick = ListBoxSongClick
+          OnDblClick = ListBoxSongDblClick
+          OnDrawItem = ListBoxSongDrawItem
         end
       end
       object CheckBoxEffect: TCheckBox
@@ -201,17 +202,17 @@ object FormMain: TFormMain
         Top = 64
         Width = 107
         Caption = 'Sound effect'
-        OnClick = CheckBoxEffectClick
         ParentShowHint = False
         ShowHint = True
         TabOrder = 1
         TabStop = False
+        OnClick = CheckBoxEffectClick
       end
     end
     object TabSheetInstruments: TTabSheet
       Caption = 'Instruments [F3]'
-      ClientHeight = 673
-      ClientWidth = 972
+      ClientHeight = 666
+      ClientWidth = 976
       ImageIndex = 1
       object SpeedButtonImportWav: TSpeedButton
         Left = 514
@@ -220,9 +221,9 @@ object FormMain: TFormMain
         Top = 258
         Width = 45
         Caption = 'WAV'
-        OnClick = SpeedButtonImportWavClick
         ShowHint = True
         ParentShowHint = False
+        OnClick = SpeedButtonImportWavClick
       end
       object SpeedButtonInsMoveUp: TSpeedButton
         Left = 514
@@ -270,8 +271,9 @@ object FormMain: TFormMain
         Top = 8
         Width = 400
         Caption = 'Sample info'
-        ClientHeight = 76
+        ClientHeight = 75
         ClientWidth = 398
+        ParentBackground = False
         TabOrder = 0
         object LabelWavInfo: TLabel
           Left = 9
@@ -294,8 +296,9 @@ object FormMain: TFormMain
         Top = 8
         Width = 237
         Caption = 'Envelope settings'
-        ClientHeight = 147
+        ClientHeight = 146
         ClientWidth = 235
+        ParentBackground = False
         TabOrder = 1
         object LabelAR: TLabel
           Left = 18
@@ -332,8 +335,8 @@ object FormMain: TFormMain
           Top = 30
           Width = 158
           Max = 15
-          OnChange = TrackBarARChange
           Position = 0
+          OnChange = TrackBarARChange
           ParentShowHint = False
           ShowHint = True
           TabOrder = 0
@@ -345,8 +348,8 @@ object FormMain: TFormMain
           Top = 62
           Width = 158
           Max = 7
-          OnChange = TrackBarDRChange
           Position = 0
+          OnChange = TrackBarDRChange
           ParentShowHint = False
           ShowHint = True
           TabOrder = 1
@@ -358,8 +361,8 @@ object FormMain: TFormMain
           Top = 94
           Width = 158
           Max = 7
-          OnChange = TrackBarSLChange
           Position = 0
+          OnChange = TrackBarSLChange
           ParentShowHint = False
           ShowHint = True
           TabOrder = 2
@@ -371,8 +374,8 @@ object FormMain: TFormMain
           Top = 126
           Width = 158
           Max = 31
-          OnChange = TrackBarSRChange
           Position = 0
+          OnChange = TrackBarSRChange
           ParentShowHint = False
           ShowHint = True
           TabOrder = 3
@@ -384,8 +387,9 @@ object FormMain: TFormMain
         Top = 8
         Width = 264
         Caption = 'Instrument list'
-        ClientHeight = 511
+        ClientHeight = 510
         ClientWidth = 262
+        ParentBackground = False
         TabOrder = 2
         object EditInsName: TEdit
           Left = 9
@@ -393,10 +397,10 @@ object FormMain: TFormMain
           Top = 21
           Width = 248
           MaxLength = 30
-          OnChange = EditInsNameChange
-          OnKeyPress = EditInsNameKeyPress
           TabOrder = 0
           Text = 'EditInsName'
+          OnChange = EditInsNameChange
+          OnKeyPress = EditInsNameKeyPress
         end
         object ListBoxIns: TListBox
           Left = 9
@@ -404,12 +408,12 @@ object FormMain: TFormMain
           Top = 51
           Width = 248
           ItemHeight = 16
-          OnDblClick = ListBoxInsDblClick
-          OnDrawItem = ListBoxInsDrawItem
-          OnMouseDown = ListBoxInsMouseDown
           Style = lbOwnerDrawFixed
           TabOrder = 1
           TopIndex = -1
+          OnDblClick = ListBoxInsDblClick
+          OnDrawItem = ListBoxInsDrawItem
+          OnMouseDown = ListBoxInsMouseDown
         end
       end
       object GroupBoxSampleLength: TGroupBox
@@ -418,8 +422,9 @@ object FormMain: TFormMain
         Top = 108
         Width = 185
         Caption = 'Sample length'
-        ClientHeight = 47
+        ClientHeight = 46
         ClientWidth = 183
+        ParentBackground = False
         TabOrder = 3
         object LabelSize: TLabel
           Left = 15
@@ -435,9 +440,9 @@ object FormMain: TFormMain
           Top = 26
           Width = 32
           Caption = 'Max'
-          OnClick = SpeedButtonLengthToMaxClick
           ShowHint = True
           ParentShowHint = False
+          OnClick = SpeedButtonLengthToMaxClick
         end
         object SpeedButtonSampleLengthInc: TSpeedButton
           Left = 113
@@ -460,10 +465,10 @@ object FormMain: TFormMain
           Height = 34
           Top = 26
           Width = 49
-          OnChange = EditLengthChange
-          OnKeyPress = EditLengthKeyPress
           TabOrder = 0
           Text = '0'
+          OnChange = EditLengthChange
+          OnKeyPress = EditLengthKeyPress
         end
       end
       object GroupBoxDownsampling: TGroupBox
@@ -472,8 +477,9 @@ object FormMain: TFormMain
         Top = 108
         Width = 209
         Caption = 'Downsampling'
-        ClientHeight = 47
+        ClientHeight = 46
         ClientWidth = 207
+        ParentBackground = False
         TabOrder = 4
         object SpeedButtonDownsample1: TSpeedButton
           Left = 16
@@ -484,9 +490,9 @@ object FormMain: TFormMain
           Caption = 'None'
           Down = True
           GroupIndex = 4
-          OnClick = SpeedButtonDownsample1Click
           ShowHint = True
           ParentShowHint = False
+          OnClick = SpeedButtonDownsample1Click
         end
         object SpeedButtonDownsample2: TSpeedButton
           Tag = 1
@@ -497,9 +503,9 @@ object FormMain: TFormMain
           Width = 56
           Caption = '2x'
           GroupIndex = 4
-          OnClick = SpeedButtonDownsample1Click
           ShowHint = True
           ParentShowHint = False
+          OnClick = SpeedButtonDownsample1Click
         end
         object SpeedButtonDownsample4: TSpeedButton
           Tag = 2
@@ -510,9 +516,9 @@ object FormMain: TFormMain
           Width = 56
           Caption = '4x'
           GroupIndex = 4
-          OnClick = SpeedButtonDownsample1Click
           ShowHint = True
           ParentShowHint = False
+          OnClick = SpeedButtonDownsample1Click
         end
       end
       object GroupBoxResampling: TGroupBox
@@ -521,8 +527,9 @@ object FormMain: TFormMain
         Top = 179
         Width = 281
         Caption = 'Resampling method'
-        ClientHeight = 47
+        ClientHeight = 46
         ClientWidth = 279
+        ParentBackground = False
         TabOrder = 5
         object SpeedButtonResampleNearest: TSpeedButton
           Left = 15
@@ -580,8 +587,9 @@ object FormMain: TFormMain
         Top = 179
         Width = 356
         Caption = 'Volume and EQ'
-        ClientHeight = 47
+        ClientHeight = 46
         ClientWidth = 354
+        ParentBackground = False
         TabOrder = 6
         object LabelVolume: TLabel
           Left = 143
@@ -597,9 +605,9 @@ object FormMain: TFormMain
           Top = 28
           Width = 23
           Caption = 'Z'
-          OnClick = SpeedButtonEQResetClick
           ShowHint = True
           ParentShowHint = False
+          OnClick = SpeedButtonEQResetClick
         end
         object TrackBarVolume: TTrackBar
           Left = 192
@@ -609,8 +617,8 @@ object FormMain: TFormMain
           Width = 152
           Frequency = 32
           Max = 255
-          OnChange = TrackBarVolumeChange
           Position = 128
+          OnChange = TrackBarVolumeChange
           ParentShowHint = False
           ShowHint = True
           TabOrder = 0
@@ -624,11 +632,11 @@ object FormMain: TFormMain
           Alignment = taCenter
           Caption = 'StaticTextEQLow'
           DragCursor = crSizeNS
-          OnMouseDown = StaticTextEQLowMouseDown
-          OnMouseMove = StaticTextEQLowMouseMove
           ParentShowHint = False
           ShowHint = True
           TabOrder = 1
+          OnMouseDown = StaticTextEQLowMouseDown
+          OnMouseMove = StaticTextEQLowMouseMove
         end
         object StaticTextEQMid: TStaticText
           Left = 70
@@ -639,11 +647,11 @@ object FormMain: TFormMain
           Alignment = taCenter
           Caption = 'StaticTextEQLow'
           DragCursor = crSizeNS
-          OnMouseDown = StaticTextEQLowMouseDown
-          OnMouseMove = StaticTextEQLowMouseMove
           ParentShowHint = False
           ShowHint = True
           TabOrder = 2
+          OnMouseDown = StaticTextEQLowMouseDown
+          OnMouseMove = StaticTextEQLowMouseMove
         end
         object StaticTextEQHigh: TStaticText
           Left = 104
@@ -654,11 +662,11 @@ object FormMain: TFormMain
           Alignment = taCenter
           Caption = 'StaticTextEQLow'
           DragCursor = crSizeNS
-          OnMouseDown = StaticTextEQLowMouseDown
-          OnMouseMove = StaticTextEQLowMouseMove
           ParentShowHint = False
           ShowHint = True
           TabOrder = 3
+          OnMouseDown = StaticTextEQLowMouseDown
+          OnMouseMove = StaticTextEQLowMouseMove
         end
       end
       object GroupBoxSampleLoop: TGroupBox
@@ -667,8 +675,9 @@ object FormMain: TFormMain
         Top = 250
         Width = 500
         Caption = 'Loop options'
-        ClientHeight = 47
+        ClientHeight = 46
         ClientWidth = 498
+        ParentBackground = False
         TabOrder = 7
         object SpeedButtonLoop: TSpeedButton
           Left = 15
@@ -679,9 +688,9 @@ object FormMain: TFormMain
           AllowAllUp = True
           Caption = 'On'
           GroupIndex = 1
-          OnClick = SpeedButtonLoopClick
           ShowHint = True
           ParentShowHint = False
+          OnClick = SpeedButtonLoopClick
         end
         object LabelLoopStart: TLabel
           Left = 139
@@ -720,9 +729,9 @@ object FormMain: TFormMain
           Top = 26
           Width = 70
           Caption = 'From WAV'
-          OnClick = SpeedButtonLoopWavClick
           ShowHint = True
           ParentShowHint = False
+          OnClick = SpeedButtonLoopWavClick
         end
         object SpeedButtonLoopRamp: TSpeedButton
           Left = 46
@@ -733,9 +742,9 @@ object FormMain: TFormMain
           AllowAllUp = True
           Caption = 'Ramp'
           GroupIndex = 5
-          OnClick = SpeedButtonLoopRampClick
           ShowHint = True
           ParentShowHint = False
+          OnClick = SpeedButtonLoopRampClick
         end
         object SpeedButtonLoopStartInc: TSpeedButton
           Left = 227
@@ -778,29 +787,29 @@ object FormMain: TFormMain
           AllowAllUp = True
           Caption = 'Unroll'
           GroupIndex = 6
-          OnClick = SpeedButtonLoopUnrollClick
           ShowHint = True
           ParentShowHint = False
+          OnClick = SpeedButtonLoopUnrollClick
         end
         object EditLoopStart: TEdit
           Left = 178
           Height = 34
           Top = 26
           Width = 49
-          OnChange = EditLoopStartChange
-          OnKeyPress = EditLengthKeyPress
           TabOrder = 0
           Text = '0'
+          OnChange = EditLoopStartChange
+          OnKeyPress = EditLengthKeyPress
         end
         object EditLoopEnd: TEdit
           Left = 307
           Height = 34
           Top = 26
           Width = 49
-          OnChange = EditLoopEndChange
-          OnKeyPress = EditLengthKeyPress
           TabOrder = 1
           Text = '0'
+          OnChange = EditLoopEndChange
+          OnKeyPress = EditLengthKeyPress
         end
       end
       object GroupBoxWaveEnvPreview: TGroupBox
@@ -809,8 +818,9 @@ object FormMain: TFormMain
         Top = 321
         Width = 643
         Caption = 'Waveform and envelope preview'
-        ClientHeight = 198
+        ClientHeight = 197
         ClientWidth = 641
+        ParentBackground = False
         TabOrder = 8
         object PaintBoxADSR: TPaintBox
           Left = 9
@@ -823,8 +833,8 @@ object FormMain: TFormMain
     end
     object TabSheetInfo: TTabSheet
       Caption = 'Info [F4]'
-      ClientHeight = 673
-      ClientWidth = 972
+      ClientHeight = 666
+      ClientWidth = 976
       ImageIndex = 2
       OnShow = TabSheetInfoShow
       object GroupBoxMemoryUse: TGroupBox
@@ -833,8 +843,9 @@ object FormMain: TFormMain
         Top = 3
         Width = 910
         Caption = 'SPC700 memory use'
-        ClientHeight = 231
+        ClientHeight = 230
         ClientWidth = 908
+        ParentBackground = False
         TabOrder = 0
         object PaintBoxMemoryUse: TPaintBox
           Left = 16
@@ -850,8 +861,9 @@ object FormMain: TFormMain
         Top = 258
         Width = 382
         Caption = 'About'
-        ClientHeight = 149
+        ClientHeight = 148
         ClientWidth = 380
+        ParentBackground = False
         TabOrder = 1
         object Label4: TLabel
           Left = 16

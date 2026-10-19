@@ -9,7 +9,11 @@ unit UnitSubSong;
 
 
   type
+
+    { TFormSubSong }
+
     TFormSubSong = class(TForm)
+      procedure Label1Click(Sender: TObject);
     private
 
     public
@@ -23,6 +27,13 @@ unit UnitSubSong;
 
 
   {$R *.lfm}
+
+  { TFormSubSong }
+
+  procedure TFormSubSong.Label1Click(Sender: TObject);
+  begin
+
+  end;
 
 end.
 

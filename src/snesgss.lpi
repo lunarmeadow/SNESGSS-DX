@@ -16,7 +16,7 @@
     <VersionInfo>
       <UseVersionInfo Value="True"/>
       <AutoIncrementBuild Value="True"/>
-      <BuildNr Value="1"/>
+      <BuildNr Value="2"/>
       <Attributes pvaDebug="True"/>
     </VersionInfo>
     <BuildModes>
@@ -57,7 +57,6 @@
         <ComponentName Value="FormMain"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UnitName Value="UnitMain"/>
       </Unit>
       <Unit>
         <Filename Value="UnitOutputMonitor.pas"/>
@@ -65,7 +64,6 @@
         <ComponentName Value="FormOutputMonitor"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UnitName Value="UnitOutputMonitor"/>
       </Unit>
       <Unit>
         <Filename Value="UnitTranspose.pas"/>
@@ -73,7 +71,6 @@
         <ComponentName Value="FormTranspose"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UnitName Value="UnitTranspose"/>
       </Unit>
       <Unit>
         <Filename Value="UnitReplace.pas"/>
@@ -81,7 +78,6 @@
         <ComponentName Value="FormReplace"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UnitName Value="UnitReplace"/>
       </Unit>
       <Unit>
         <Filename Value="UnitSectionName.pas"/>
@@ -89,7 +85,6 @@
         <ComponentName Value="SectionName"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UnitName Value="UnitSectionName"/>
       </Unit>
       <Unit>
         <Filename Value="UnitSectionList.pas"/>
@@ -97,7 +92,6 @@
         <ComponentName Value="FormSectionList"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UnitName Value="UnitSectionList"/>
       </Unit>
       <Unit>
         <Filename Value="UnitSubSong.pas"/>
@@ -105,12 +99,10 @@
         <ComponentName Value="FormSubSong"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UnitName Value="UnitSubSong"/>
       </Unit>
       <Unit>
         <Filename Value="PaintboxSongRender.pas"/>
         <IsPartOfProject Value="True"/>
-        <UnitName Value="PaintboxSongRender"/>
       </Unit>
     </Units>
   </ProjectOptions>

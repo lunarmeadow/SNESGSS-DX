@@ -12,7 +12,7 @@ object FormSubSong: TFormSubSong
   Font.Height = -13
   Font.Name = 'Tahoma'
   Position = poMainFormCenter
-  LCLVersion = '2.2.0.4'
+  LCLVersion = '4.8.0.0'
   Scaled = False
   object Label1: TLabel
     Left = 8
@@ -20,6 +20,7 @@ object FormSubSong: TFormSubSong
     Top = 16
     Width = 117
     Caption = 'Sub song number:'
+    OnClick = Label1Click
   end
   object EditSubSong: TEdit
     Left = 120
@@ -47,7 +48,7 @@ object FormSubSong: TFormSubSong
     Top = 12
     Width = 58
     Caption = 'Import'
-    OnClick = ButtonImportClick
     TabOrder = 0
+    OnClick = ButtonImportClick
   end
 end

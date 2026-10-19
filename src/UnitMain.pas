@@ -1,6 +1,7 @@
 unit UnitMain;
 
 {$mode objfpc}{$H+}
+{$MACRO ON}
 
 interface
 
@@ -273,8 +274,117 @@ type
 
   end;
 
+  instrumentStruct = record
+    source: ^Int8;
+    source_length: Int32;
+	source_rate: Int32;
+    source_volume: Int32;
+
+    env_ar: Int32;
+    env_dr: Int32;
+    env_sl: Int32;
+    env_sr: Int32;
+
+    length: Int32;
+
+    loop_start: Int32;
+    loop_end: Int32;
+    loop_enable: Boolean;
+    loop_unroll: Boolean;
+
+    wav_loop_start: Int32;
+    wav_loop_end: Int32;
+
+    resample_type: Int32;
+    downsample_factor: Int32;
+  end;
+
 var
-  FormMain: TFormMain;
+	FormMain: TFormMain;
+
+	BRRTemp: ^UInt8;
+	BRRTempAllocSize: Int32;
+	BRRTempSize: Int32;
+	BRRTempLoop: Int32;
+
+	CompressSrcPtr: Int32;
+	CompressSeqPtr: Int32;
+	CompressOutPtr: Int32;
+
+  // to do, songstructs and undostructs
+
+	SongCur: Int32;
+	RowCur: Int32;
+	RowView: Int32;
+	ColCur: Int32;
+	ColCurPrev: Int32;
+	OctaveCur: Int32;
+
+	TextFontHeight: Int32;
+	TextFontWidth: Int32;
+
+	PageStep: Int32;
+	AutoStep: Int32;
+
+	ResetNumber: Boolean;
+
+	SelectionColS: Int32;
+	SelectionRowS: Int32;
+	SelectionColE: Int32;
+	SelectionRowE: Int32;
+	SelectionWidth: Int32;
+	SelectionHeight: Int32;
+
+	CopyBufferWidth: Int32;
+	CopyBufferHeight: Int32;
+
+	ShiftKeyIsDown: Boolean;
+
+	SPCInstrumentsSize: Int32;
+	SPCMusicSize: Int32;
+	SPCEffectsSize: Int32;
+	SPCMemTopAddr: Int32;
+	SPCMusicLargestSize: Int32;
+
+	InstrumentsCount: Int32;
+
+	UpdateSampleData: Boolean;
+
+	PrevMouseY: Int32;
+
+	SongDoubleClick: Boolean;
+
+	SPCTemp: array [0..66047] of UInt8;
+	SPCTempPlay: array [0..66047] of UInt8;
+	SPCMem: array [0..65535] of UInt8;
+
+	SPCChnMem: array [0..65535] of UInt8;
+	SPCChnPack: array [0..65535] of UInt8;
+
+	CompressSeqBuf: array [0..255] of UInt8;
+
+	ChannelMute: array [0..7] of Boolean;
+const
+	 VERSION_STR = 'SNESGSS-DX';
+	 CONFIG_NAME = 'snesgss.cfg';
+	 PROJECT_SIGNATURE = '[SNESGSS Module]';
+	 INSTRUMENT_SIGNATURE = '[SNESGSS Instrument]';
+	 EX_VOL_SIGNATURE = '[EX VOL]';
+	 UPDATE_RATE_HZ = 160;
+
+     MAX_INSTRUMENTS = 99;
+     MAX_SONGS = 99;
+     MAX_ROWS = 10000;
+
+     COLUMN_TYPE_SPEED = 0;
+     COLUMN_TYPE_INSTRUMENT = 1;
+     COLUMN_TYPE_NOTE = 2;
+     COLUMN_TYPE_EFFECT = 3;
+     COLUMN_TYPE_VALUE = 4;
+
+     DEFAULT_PAGE_ROWS = 16;
+
+{$define DEFAULT_SPEED := (UPDATE_RATE_HZ/(120*(1.0/60.0)*4))}
 
 implementation
 
